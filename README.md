@@ -1,16 +1,16 @@
 # ebook-file-renaming
 Renaming pdf and epub files according to their metadata entries
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+__Motivation__: While people have increasingly a digital ebook library, oftentimes the file names are messy and inconsistent. This program renames your files by picking title and author from its metadata. Finally, your library is cleaned up with a homogenous file name structure.
 
-The program scans a directory, including subdirectories, for pdf and epub files, extract title and author from metadata and replace its filename with that.
+The program scans a directory, including subdirectories, for pdf and epub files, extracts title and author from metadata and replace its filename with that.
+
 When metadata is present, the program proposes for each file its renaming which the user can confirm or not.
 In case of confirmation, the program sets the pattern >title by author.pdf< (or .epub)
 Example: >messyname.epub< is being renamed to >Robinson Crusoe by Daniel Dafoe.epub<
 In case it should not be renamed as proposed, the program asks to rename it manually which you can skip as well.
 So for each file, you are in control if and how it should be renamed.
+
 <!-- ![example image](header.png) -->
 
 <img src="https://github.com/dossma/ebook-file-renaming/blob/main/header.png" width=50% height=50%>
