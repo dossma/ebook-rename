@@ -12,7 +12,7 @@ This program renames your files by picking title and author from its metadata.
 _Example:_ `dafoe.epub` is being renamed to `Robinson Crusoe by Daniel Dafoe.epub`
 
 ## Procedure
-The program scans a directory, including subdirectories, for pdf and epub files.
+The program scans a directory for pdf and epub files.
 For each file, when metadata is present, the program proposes its renaming which the user can confirm or not.
 The proposed file name has the pattern `title by author.pdf` (or `....epub`).
 In case you deny the proposed renaiming (for example when metadata is empty and the proposed file name is bad), the program asks you to rename it manually.
