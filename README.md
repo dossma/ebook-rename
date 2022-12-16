@@ -26,7 +26,7 @@ So for each file, you are in control if and how it should be renamed.
 ## Get started
 
 1. Download the file
-2. Open it in your Python IDE
+2. Open it in your Python IDE (Recommendation: [PyCharm](https://www.jetbrains.com/pycharm/))
 3. Paste the target path into the variable quotes of `folder = r"C:\path\to\your\ebook\folder"`
 4. Run  
 
