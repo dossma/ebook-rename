@@ -37,7 +37,7 @@ pip install ebookatty
 
 Author: Jonas Dossmann
 
-Distributed under the GPL-3.0 license. See ``LICENSE`` for more information.
+Distributed under the GPL-3.0 license.
 
 [https://github.com/yourname/github-link](https://github.com/dossma/)
 
