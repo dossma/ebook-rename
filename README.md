@@ -13,7 +13,7 @@ In case it should not be renamed as proposed, the program asks to rename it manu
 So for each file, you are in control if and how it should be renamed.
 <!-- ![example image](header.png) -->
 
-[!process example](https://github.com/dossma/ebook-file-renaming/blob/main/header.png | width=200)
+<img src="https://github.com/dossma/ebook-file-renaming/blob/main/header.png" width=50% height=50%>
 
 ## Installation
 
