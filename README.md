@@ -12,7 +12,7 @@ Example: >messyname.epub< is being renamed to >Robinson Crusoe by Daniel Dafoe.e
 In case it should not be renamed as proposed, the program asks to rename it manually which you can skip as well.
 So for each file, you are in control if and how it should be renamed.
 
-![](header.png)
+![example image](header.png)
 
 ## Installation
 
