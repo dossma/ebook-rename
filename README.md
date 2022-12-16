@@ -9,7 +9,7 @@ This program cleans up your files and you get a homogenous file name structure.
 ## Summary
 This program renames your files by picking title and author from its metadata. 
 
-_Example:_ `MeSsYnAmE.epub` is being renamed to `Robinson Crusoe by Daniel Dafoe.epub`
+_Example:_ `dafoe.epub` is being renamed to `Robinson Crusoe by Daniel Dafoe.epub`
 
 ## Procedure
 The program scans a directory, including subdirectories, for pdf and epub files.
