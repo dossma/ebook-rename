@@ -15,55 +15,29 @@ So for each file, you are in control if and how it should be renamed.
 
 <img src="https://github.com/dossma/ebook-file-renaming/blob/main/header.png" width=50% height=50%>
 
-## Installation
+## Get started
 
-OS X & Linux:
-
-```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
-```
-
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
+Download the file, open in your Python IDE, paste the target path where your files are under the variable "folder" and run.  
+Setting up a test folder for a first try is recommended as the file names will be overwritten.
 
 ## Development setup
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+Required libraries are
+- PyPDF2: https://github.com/py-pdf/PyPDF2
+- ebookatty: https://github.com/alexpdev/ebookatty
+- os
+- pathlib
 
 ```sh
-make install
-npm test
+pip install PyPDF2
+pip install ebookatty
 ```
-
-## Release History
-
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+Author: Jonas Dossmann
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+Distributed under the GNUGpl license. See ``LICENSE`` for more information.
 
 [https://github.com/yourname/github-link](https://github.com/dbader/)
 
