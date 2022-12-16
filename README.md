@@ -11,8 +11,7 @@ In case of confirmation, the program sets the pattern >title by author.pdf< (or 
 Example: >messyname.epub< is being renamed to >Robinson Crusoe by Daniel Dafoe.epub<
 In case it should not be renamed as proposed, the program asks to rename it manually which you can skip as well.
 So for each file, you are in control if and how it should be renamed.
-
-![example image](header.png | width="200")
+<!-- ![example image](header.png) -->
 
 ## Installation
 
