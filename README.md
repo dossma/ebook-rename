@@ -25,8 +25,6 @@ Setting up a test folder for a first try is recommended as the file names will b
 Required libraries are
 - PyPDF2: https://github.com/py-pdf/PyPDF2
 - ebookatty: https://github.com/alexpdev/ebookatty
-- os
-- pathlib
 
 ```sh
 pip install PyPDF2
