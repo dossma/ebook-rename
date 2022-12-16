@@ -2,7 +2,7 @@
 Renaming pdf and epub files according to their metadata entries
 
 ## Motivation 
-While people have an increasing digital ebook library, oftentimes the file names are messy and inconsistent. 
+While people have a growing digital ebook library, oftentimes the file names are messy and inconsistent. 
 
 This program cleans up your files and you get a homogenous file name structure.
 
