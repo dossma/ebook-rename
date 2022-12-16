@@ -1,14 +1,22 @@
 # ebook-file-renaming
 Renaming pdf and epub files according to their metadata entries
 
-__Motivation__: While people have increasingly a digital ebook library, oftentimes the file names are messy and inconsistent. This program renames your files by picking title and author from its metadata. Finally, your library is cleaned up with a homogenous file name structure.
+## Motivation 
+While people have an increasing digital ebook library, oftentimes the file names are messy and inconsistent. 
 
-The program scans a directory, including subdirectories, for pdf and epub files, extracts title and author from metadata and replace its filename with that.
+This program cleans up your files and you get a homogenous file name structure.
 
-When metadata is present, the program proposes for each file its renaming which the user can confirm or not.
-In case of confirmation, the program sets the pattern >title by author.pdf< (or .epub)
-Example: >messyname.epub< is being renamed to >Robinson Crusoe by Daniel Dafoe.epub<
-In case it should not be renamed as proposed, the program asks to rename it manually which you can skip as well.
+## Summary
+This program renames your files by picking title and author from its metadata. 
+
+_Example:_ `messyname.epub` is being renamed to `Robinson Crusoe by Daniel Dafoe.epub`
+
+## Procedure
+The program scans a directory, including subdirectories, for pdf and epub files.
+For each file, when metadata is present, the program proposes its renaming which the user can confirm or not.
+The proposed file name has the pattern `title by author.pdf` (or `....epub`).
+In case you deny the proposed renaiming (for example when metadata is empty and the proposed file name is bad), the program asks you to rename it manually.
+You then enter a new file name manually __or__ decide to leave its present file name.
 So for each file, you are in control if and how it should be renamed.
 
 <!-- ![example image](header.png) -->
