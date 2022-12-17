@@ -1,15 +1,12 @@
 # ebook-renaming
-Renaming pdf and epub files according to their metadata entries
+This program renames your files by picking title and author from its metadata. 
+
+_Example:_ `dafoe.epub` is being renamed to `Robinson Crusoe by Daniel Dafoe.epub`
 
 ## Motivation 
 While people have a growing digital library, oftentimes the file names are messy and inconsistent. 
 
 This program cleans up your files and you get a homogenous file name structure.
-
-## Summary
-This program renames your files by picking title and author from its metadata. 
-
-_Example:_ `dafoe.epub` is being renamed to `Robinson Crusoe by Daniel Dafoe.epub`
 
 ## Procedure
 The program scans a directory for pdf and epub files.
