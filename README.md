@@ -1,4 +1,4 @@
-# ebook-renaming
+# ebook-rename
 This program renames your files by picking title and author from its metadata. 
 
 _Example:_ `dafoe.epub` is being renamed to `Robinson Crusoe by Daniel Dafoe.epub`
