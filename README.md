@@ -11,7 +11,7 @@ This program cleans up your files and you get a homogenous file name structure.
 ## Procedure
 The program scans a directory for pdf and epub files.
 For each file, when metadata is present, the program proposes its renaming which the user can confirm or not.
-The proposed file name has the pattern `title by author.pdf` (or `....epub`).
+The proposed file name has the pattern `title by author.pdf` (or `epub`).
 In case you deny the proposed renaiming (for example when metadata is empty and the proposed file name is bad), the program asks you to rename it manually.
 You then enter a new file name manually __or__ decide to leave its present file name.
 So for each file, you are in control if and how it should be renamed.
