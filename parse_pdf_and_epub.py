@@ -3,19 +3,22 @@ import ebookatty
 import os
 # import shutil
 import pathlib
+from glob import glob
 
 """
- Scan directory for pdf and epub files, extract title and author from metadata and replace its filename with that.
+Explanation:
+ Scan directory for pdf and epub files, extract title and author from metadata and replace its filename with these.
  When metadata is present, the program proposes for each file its renaming which the user can confirm or not.
  In case of confirmation, the program sets the pattern >title by author.pdf< (or .epub)
  Example: >messyname.epub< is being renamed to >Robinson Crusoe by Daniel Dafoe.epub<
  In case it should not be renamed as proposed, the program asks to rename it manually which you can skip as well.
  Hereby, you can check for each file if and how you want it to be renamed.
+
+ Warning 1: Test this tool first on a small directrory for you to understrand how it works.
+ Warning 2: Use this tool only for directories which do NOT contain sub-directories. 
 """
 
-
-folder = r"C:\path\to\your\ebook\folder"
-
+folder = r"C:\path\to\your\ebook\folder"  # Note: no final slash!
 
 def main(folder):
     file_list = collect(folder)
@@ -39,8 +42,9 @@ def main(folder):
 
 def collect(folder):
 
-    file_list = [os.path.join(folder, name) for folder, subdirs, files in os.walk(folder) for name in files]
-    # file_list = [os.path.join(folder, name) for folder, subdirs, files in os.walk(folder) for name in files if name.endswith(".pdf")]
+    pdf_files = glob(folder + '/**/*.pdf', recursive=True)  
+    epub_files = glob(folder + '/**/*.epub', recursive=True)  
+    file_list = pdf_files + epub_files
 
     return file_list
 
@@ -98,19 +102,21 @@ def save(file_old, file_new, file_folder, untouchedlist):
     file_old_stripped = file_old.split("\\")[-1]
     file_new_stripped = file_new.split("\\")[-1]
     question = input("\nRename\n" + '\033[1m' + file_old_stripped + '\033[0m' + "\nto\n" + '\033[1m' + file_new_stripped + '\033[0m' + "?" +
-                     "\npress y for yes, n for no\n")
+                     "\npress y for yes, n for no, q to quit\n")
     # print("\n")
     if question == "y":
         os.rename(file_old, file_new)
-    else:
-        man_filename = input("Type new file name (or press \"n\" for skipping the file)\n")
+    elif question == "n":
+        man_filename = input("Type new file name including extension (or press \"n\" for skipping the file)\n")
         if man_filename != "n":
             file_new = file_folder + "\\" + man_filename
             os.rename(file_old, file_new)
         else:
             untouchedlist.append(file_old)
             pass
-
+    else:
+        terminate(untouched=untouchedlist)
+        quit()
 
 def terminate(untouched):
     print("\nDONE!\n")
